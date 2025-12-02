@@ -10,15 +10,22 @@ headers = {
 def get_Id(df):
     return df['id'].tolist()
 
-def product():
-    pass
+def product(data):
+    return {
+        "id": data.get("id"),
+        "name": data.get("name"),
+        "url_key": data.get("url_key"),
+        "price": data.get("price"),
+        "description": data.get("description"),
+        "images": data.get("images")[0].get("base_url")
+    }
 
 def info_Products(ids):
     result = []
     for id in range(len(ids)):
         response = requests.get(url='https://api.tiki.vn/product-detail/api/v1/products/{}'.format(ids[id]), headers=headers, timeout=10)
         if response.status_code == 200:
-            result.append(response.json())
+            result.append(product(response.json()))
             # time.sleep(2)
     return result
         
