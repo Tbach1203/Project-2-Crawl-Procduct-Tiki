@@ -17,6 +17,7 @@ This project focuses on collecting large-scale product data from **Tiki.vn**, us
   - Retry and error handling
 - Modular codebase designed for scalability and maintainability   
 ## 📂 Project Structure
+```
 Project-2-Crawl-Product-Tiki/
 ├── config/                 # Configuration files 
 ├── etl/                   # Data processing & transformation
@@ -25,5 +26,5 @@ Project-2-Crawl-Product-Tiki/
 ├── product/              # output
 ├── .gitignore           # Git ignore rules for the project
 ├── requirements.txt     # Python dependencies
-
+```
 
