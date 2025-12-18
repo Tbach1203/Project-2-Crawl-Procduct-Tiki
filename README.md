@@ -10,12 +10,7 @@ This project focuses on collecting large-scale product data from **Tiki.vn**, us
   - `url_key`
   - `price`
   - `description`
-  - `images_url` 
-- Implement performance optimizations to **reduce data retrieval time**:
-  - Concurrent requests
-  - Request batching
-  - Retry and error handling
-- Modular codebase designed for scalability and maintainability   
+  - `images_url`  
 ## 📂 Project Structure
 ```
 Project-2-Crawl-Product-Tiki/
