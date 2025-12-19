@@ -13,13 +13,15 @@ This project focuses on collecting large-scale product data from **Tiki.vn**, us
   - `images_url`  
 ## 📂 Project Structure
 ```
-Project-2-Crawl-Product-Tiki/
+crawl_product_tiki/
 ├── config/                 # Configuration files 
+├── docs/
 ├── etl/                   # Data processing & transformation
-├── input/                 # Input files
-│   ├── products-0-200000.csv    # List of product IDs to crawl
-├── product/              # output
+├── pipelines/
+├── src/
+├── tests/
 ├── .gitignore           # Git ignore rules for the project
+├── README.md
 ├── requirements.txt     # Python dependencies
 ```
 
